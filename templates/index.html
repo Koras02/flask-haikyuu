@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하이큐 캐릭터 검색하기</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css')
+    }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>하이큐 캐릭터를 검색해주세요</h1>
+      <input type="text" id="searchInput" placeholder="캐릭터 이름 입력" />
+      <button id="searchButton">검색</button>
+
+      <div id="characterList" class="character-list"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
